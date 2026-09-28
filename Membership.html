@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .first{
+            background-color: black;
+            display: flex;
+            justify-content: space-between;
+             position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        .first .left{
+            margin-left: 100px;
+        }
+        .first .left .logo{
+            display: flex;
+            color: white;
+            list-style: none;
+            font-size: 30px;
+            font-weight: bolder;
+        }
+        .first .left .logo .red{
+            color:rgb(201, 31, 31);
+        }
+        .first .right .menu{
+            display: flex;
+            color: white;
+            list-style: none;
+            justify-content: space-between;
+            width: 550px;
+            margin-right: 20px;
+            align-items: center;
+            margin-top: 40px;
+        }
+         
+        .first .right .menu a{
+            color: white;
+            text-decoration: none;
+
+        }
+        .first .right .menu .red{
+            background-color: rgb(155, 7, 7);
+            border-radius: 3px;
+            padding-left: 8px;
+            padding-right: 8px;
+            padding-bottom: 3px;
+            padding-top: 3px;
+        }
+       
+        .first .right .menu .btn{
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 5px;
+            padding-top: 5px;
+            background-color: rgb(172, 8, 8);
+            color: white;
+            border-radius: 5px;
+        }
+        .first .right .menu li:hover{
+            transform: translateY(-4px);
+             border: 1px solid rgb(160, 8, 8);
+             background-color: rgb(156, 6, 6);
+             border-radius: 5px;
+             padding-left: 5px;
+             padding-right: 5px;
+              padding-bottom: 5px;
+             padding-top: 5px;
+
+        }
+        .first .right .btn:hover{
+             background: #fff;
+             color: #000;
+        }
+        .second{
+            background-color: rgb(8, 8, 8);
+            color: white;
+            text-align: center;
+            padding: 1px;
+            padding-bottom: 20px;
+        }
+        .second .red{
+            color: red;
+        }
+        .third{
+            background-color: rgb(4, 4, 4);
+            color: white;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .third .box{
+            border: solid 2px rgb(108, 104, 104);
+            border-radius: 5px;
+            padding-left: 60px;
+            padding-right:60px;
+            background-color: rgb(26, 25, 25);
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+        }
+        .third .box:hover{
+            color: white;
+            background-color: rgb(96, 6, 6);
+             transform: translateY(-8px);
+             border-color: var(--red) 
+
+        }
+        .third .box .center{
+            text-align: center;
+            font-weight: bolder;
+        }
+        .third .box .bold{
+            text-align: center;
+            font-weight: bolder;
+            font-size: x-large;
+        }
+        .third .box .red{
+            color: rgb(207, 19, 19);
+        }
+       
+        .third .box .btn{
+            background-color: rgb(177, 39, 39);
+            color: white;
+            border: solid 2px rgb(158, 155, 155);
+            font-weight: bold;
+            font-size: small;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-radius: 5px;
+
+        }
+       
+         .third .box .btn:hover{
+             background: #fff;
+             color: #000;
+        }
+        .forth{
+            background-color: white;
+        }
+        .forth .center{
+            text-align: center;
+            padding: 1px;
+        }
+        .forth .logo{
+            display: flex;
+            justify-content: space-evenly;
+            border-top-color: rgb(63, 60, 60);
+        }
+    </style>
+</head>
+<body>
+     <div class="first">
+
+        <div class="left">
+            <ul class="logo">
+            <img src="https://cdn-icons-png.flaticon.com/128/17721/17721779.png" height="35" alt="">
+                <li>SHIV</li>
+                <li class="red">GYM</li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <ul class="menu">
+                <li><a href="Home.html">HOME</a></li>
+                <li class="red"><a href="Membership.html">MEMBERSHIP</a></li>
+                <li><a href="Trainers.html">TRAINERS</a></li>
+                <li><a href="Contact.html">CONTACT</a></li>
+            </li> <a href="Membership.html"><button class="btn">Join Now</button></a></li>
+
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="second">
+        <h1 class="red">MEMBERSHIP PLANS</h1>
+        <p>CHOOSE THE PLAN THAT'S RIGHT FOR YOU</p>
+    </div>
+    <div class="third">
+        <div class="box">
+         <h3 class="bold">BASIC</h3>
+         <span class="center"><h1 class="red">RS 15,000</h1>/MONTH</span>
+         <p>✓ Gym Access</p>
+         <p>✓ Basic Equipment</p>
+         <p>✓ Locker Room</p>
+         <p>✓ Wi-Fi Access</p>
+         <p>✓ 1 Day Free Trial</p>
+         <a href="modelcontant.html"><button class="btn" id="basic">JOIN NOW</button></a>
+        </div>
+        <div class="box">
+             <h3 class="bold">STANDARD</h3>
+             <span class="center"><h1 class="red">RS 30,000</h1>/MONTH</span>
+             <p>✓ Gym Access</p>
+             <p>✓ Cardio Equipment</p>
+             <p>✓ Locker Room</p>
+             <p>✓ Group Classes</p>
+             <p>✓ Nutrition Plan</p>
+             <p>✓ 3 Day Free Trial</p>
+             <a href="modelcontant.html"><button class="btn" id="standard">JOIN NOW</button></a>
+        </div>
+        <div class="box">
+            <h3 class="bold">PREMIUM</h3>
+             <span class="center"><h1 class="red">RS 50,000</h1>/MONTH</span>
+             <p>✓ All Standard Features</p>
+             <p>✓ Personal Trainer </p>
+             <p>✓ Special Classes</p>
+             <p>✓ Advanced Equipment</p>
+             <p>✓ Diet Consultation</p>
+             <p>✓ 7 Day Free Trial</p>
+            <a href="modelcontant.html"><button class="btn" id="premium">JOIN NOW</button></a>
+        </div>
+    </div>
+    <div class="forth">
+         <div class="center">
+        <h3 class="red">NO COMMITMENTS. CANCEL ANYTIME</h3>
+        <p>Join today and start transforming yours life!</p>
+    </div>
+    <div class="logo">
+        <p><img src="https://cdn-icons-png.flaticon.com/128/1582/1582527.png" height="50" alt="">Flexible Plans</p>
+        <p><img src="https://cdn-icons-png.flaticon.com/128/28/28591.png" height="50" alt="">Top Facilities</p>
+        <p><img src="https://cdn-icons-png.flaticon.com/128/1144/1144760.png" height="50" alt="">Export Support</p>
+    </div>
+    </div>
+    
+</body>
+</html>

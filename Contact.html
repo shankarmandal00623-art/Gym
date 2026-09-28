@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .first{
+            background-color: black;
+            display: flex;
+            justify-content: space-between;
+             position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        .first .left{
+            margin-left: 100px;
+        }
+        .first .left .logo{
+            display: flex;
+            color: white;
+            list-style: none;
+            font-size: 30px;
+            font-weight: bolder;
+        }
+        .first .left .logo .red{
+            color:rgb(201, 31, 31);
+        }
+        .first .right .menu{
+            display: flex;
+            color: white;
+            list-style: none;
+            justify-content: space-between;
+            width: 550px;
+            margin-right: 20px;
+            align-items: center;
+            margin-top: 40px;
+        }
+        .first .right .menu a{
+            color: white;
+            text-decoration: none;
+
+        }
+        .first .right .menu .red{
+            background-color: rgb(156, 10, 10);
+            border-radius: 3px;
+            padding-left: 8px;
+            padding-right: 8px;
+            padding-bottom: 3px;
+            padding-top: 3px;
+        }
+       
+        .first .right .menu .btn{
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 5px;
+            padding-top: 5px;
+            background-color: rgb(162, 8, 8);
+            color: white;
+            border-radius: 5px;
+        }
+        .first .right .menu li:hover{
+            transform: translateY(-4px);
+             border: 1px solid rgb(146, 9, 9);
+             background-color: rgb(160, 8, 8);
+             border-radius: 5px;
+             padding-left: 5px;
+             padding-right: 5px;
+             padding-bottom: 5px;
+             padding-top: 5px;
+        }
+         .first .right .btn:hover{
+             background: #fff;
+             color: #000;
+        }
+        .second{
+            background-color: rgb(27, 26, 26);
+            color: white;
+            text-align: center;
+            padding: 1px;
+            padding-bottom: 20px;
+        }
+        .second .red{
+            color: red;
+        }
+        .forth{
+            display: flex;
+            justify-content: space-around;
+            background-color: rgb(233, 227, 227);
+        }
+        .forth .boxa{
+            border: 8px solid rgb(34, 33, 33);
+            padding-right: 80px;
+            padding-left: 50px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            border-radius: 10px;
+        }
+        .forth .boxa .bx{
+            display: flex;
+            border: 2px solid white;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        .forth .boxa .bx .mar{
+            padding-left: 20px;
+            font-size: large;
+        }
+        .forth .boxa .bx .mar .sml{
+            color: rgb(76, 71, 71);
+        }
+        
+        .forth .boxb{
+             border: 8px solid rgb(34, 33, 33);
+            padding-right: 30px;
+            padding-left: 30px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            border-radius: 10px;
+        }
+        .forth .boxb h2{
+            text-align: center;
+        }
+         .forth .boxa h2{
+            text-align: center;
+        }
+         .forth .boxa .bx:hover{
+            transform: translateY(-8px);
+            border: 2px solid rgb(141, 6, 6);
+         }
+         .fifth{
+            background-color: white;
+            display: flex;
+            justify-content: space-around;
+         }
+         .fifth .boxa p{
+            margin-left: 30px;
+            color: rgb(70, 68, 68);
+         }
+         .fifth .boxa .logo{
+            display: flex;
+            list-style: none;
+            font-size: 30px;
+            font-weight: bolder;
+        }
+        .fifth .boxa .logo .red{
+            color:rgb(201, 31, 31);
+        }
+        .fifth .boxb .ul{
+            padding: 0px;
+            margin-left: 20px;
+            color: rgb(70, 68, 68);
+
+        }
+        .fifth .boxc .ul{
+            padding: 0px;
+            margin-left: 20px;
+            color: rgb(70, 68, 68);
+
+        }
+
+         .third {
+            background-color: black;
+            color: white;
+            padding-top: 10px;text-align: center;
+        }
+        .third p{
+            margin-bottom: 50px;
+        }
+        .third  .red{
+            color: rgb(216, 9, 9);
+            font-size: xx-large;
+            font-weight: bold;
+        }
+        .third .boxa{
+            display: flex;
+            justify-content: center;
+        }
+        
+        .third .boxa .name{
+            padding: 15px;
+            padding-right: 250px;
+            border-radius: 8px;
+            background-color: rgb(37, 35, 35);
+            color:white;
+            outline: none;
+            box-shadow: 5px 5px 5px rgb(164, 153, 153);
+
+        }
+         .third .boxa .name:focus{
+            border: 3px solid rgb(157, 9, 9);
+         }
+        .third .boxa .email{
+            padding: 15px;
+            padding-right: 250px;
+            border-radius: 8px;
+             background-color: rgb(37, 35, 35);
+            color:white;
+             outline: none;
+            box-shadow: 5px 5px 5px rgb(164, 153, 153);
+        }
+         .third .boxa .email:focus{
+            border: 3px solid rgb(157, 9, 9);
+         }
+        .third .boxa .meg{
+            padding: 8px;
+            padding-right: 250px;
+            margin-left: 30px;
+            border-radius: 8px;
+             background-color: rgb(37, 35, 35);
+            color:white;
+             outline: none;
+            box-shadow: 5px 5px 5px rgb(164, 153, 153);
+        }
+         .third .boxa .meg:focus{
+            border: 3px solid rgb(157, 9, 9);
+
+        }
+       .third .boxa .mem{
+            padding: 15px;
+            padding-right: 250px;
+            margin-left: 30px;
+            border-radius: 8px;
+             background-color: rgb(37, 35, 35);
+            color:white;
+             outline: none;
+            box-shadow: 5px 5px 5px rgb(164, 153, 153);
+        }
+         .third .boxa .mem:focus{
+            border: 3px solid rgb(157, 9, 9);
+        }
+         .third .boxa .gen{
+            font-size: x-large;
+            font-weight: bolder;
+            margin-left: 30px;
+            accent-color: rgb(172, 5, 5);
+        }
+
+        .third .btn{
+            background-color: rgb(141, 7, 7);
+            color: white;
+            padding: 15px;
+            padding-left: 150px;
+            padding-right: 150px;
+            margin-top: 40px;
+            margin-bottom: 50px;
+            border-radius: 10px;
+
+
+        }
+        .third .btn:hover{
+            background-color: white;
+            color: black;
+        }
+        .third .boxa .lab{
+            margin-right: 325px;
+
+        }
+         .third .boxa .labp{
+            margin-right: 305px;
+
+        } .third .boxa .labe{
+            margin-right: 300px;
+
+        } .third .boxa .labm{
+            margin-right: 285px;
+
+        }
+         .third .boxa .labme{
+            margin-right: 255px;
+
+        }
+
+
+    </style>
+</head>
+<body>
+     <div class="first">
+
+        <div class="left">
+            <ul class="logo">
+            <img src="https://cdn-icons-png.flaticon.com/128/17721/17721779.png" height="35" alt="">
+                <li>SHIV</li>
+                <li class="red">GYM</li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <ul class="menu">
+                <li><a href="Home.html">HOME</a></li>
+                <li><a href="Membership.html">MEMBERSHIP</a></li>
+                <li><a href="Trainers.html">TRAINERS</a></li>
+                <li class="red"><a href="Contact.html">CONTACT</a></li>
+            </li> <a href="Membership.html"><button class="btn">Join Now</button></a></li>
+
+
+            </ul>
+        </div>
+    </div>
+    <div class="second">
+        <h1 class="red">CONTACT US</h1>
+        <p>WE'D LOVE TO HEAR FORM YOU</p>
+    </div>
+
+    <div class="forth">
+         <div class="boxa">
+            <h2>CONTANT INFORMATION</h2>
+            <div class="bx">
+            <img src="https://cdn-icons-png.flaticon.com/128/9572/9572671.png" height="50">
+            <div class="mar"> ADDRESS <br>
+             <div class="sml"> Main road, Biratnagar-09, Nepal</div>
+              </div>
+              </div>
+            <div class="bx">
+              <img src="https://cdn-icons-png.flaticon.com/128/5724/5724260.png" height="50" alt="">
+               <div class="mar">
+            PHONE <br><div class="sml"> 9827018500</div>
+            </div>
+            </div>
+            <div class="bx">
+            <img src="https://cdn-icons-png.flaticon.com/128/6244/6244199.png" height="50" alt="">
+            <div class="mar">
+            EMAIL <br>
+            <div class="sml">shivgym002@gmail.com</div>
+            </div>
+            </div>
+             <div class="bx">
+            <img src="https://cdn-icons-png.flaticon.com/128/14090/14090215.png" height="50" alt="">
+            <div class="mar">
+            HOURS <br>
+            <div class="sml">5:00AM-10:00PM</div>
+            </div>
+            </div>
+        </div>
+        <div class="boxb">
+            <h2> FIND US on MAP</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d680.2591935133023!2d87.2782654822756!3d26.44822084897024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ef744969ab93ff%3A0xcdfeaa99bb5e0ce7!2sHimalaya%20Darshan%20College!5e1!3m2!1sen!2snp!4v1786886479486!5m2!1sen!2snp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+        </div>
+
+
+    <div class="third">
+    <form class="box">
+         <h1 class="red">Quick Inquiry Form</h1>
+            <p>Have a question? Send us a message and we'll get back to you soon.</p>
+           
+         <div class="boxa">
+            <div>
+            <label class="lab" for="">Full Name*</label><br>
+         <input class="name" type="text" id="fullName" name="name" placeholder="Enter your full name"><br><br><br>
+
+         <label class="labp" for="">Phone Number</label><br>
+         <input class="name" type="tel" id="phone" name="tel" placeholder="Enter your phone number"><br><br><br>
+
+         <label class="labe" for="">Email Address*</label><br>
+          <input class="email" type="email" id="email" name="email" placeholder="Enter your email address">
+          </div>
+
+
+          <div>
+            <label class="labm" for="">Message*</label><br>
+    <textarea class="meg" id="Message" placeholder=" Your Message......."></textarea><br><br><br>
+
+    <label class="labme" for="">Member Plans</label><br>
+    <select class="mem" id="membership">
+          <option value=""> Select Member Plans</option>
+      <option value="Basic">Basic</option>
+      <option value="Standard">Standard</option>
+      <option value="Premium">Premium</option>
+    </select><br><br><br>
+
+    <samp class="gen" id="gen">
+    <label>Gender:</label><br>
+    <input type="radio" name="gender">
+    <label>Male</label>
+    <input type="radio" name="gender">
+    <label>Female</label>
+    <input type="radio" name="gender">
+    <label>Other</label>
+    </samp><br><br>
+    </div>
+
+    </div>
+    <button type="submit" class="btn" >Send Message</button>
+        </form>
+     
+</div>
+
+<div class="fifth">
+    <div class="boxa">
+         <ul class="logo">
+            <img src="https://cdn-icons-png.flaticon.com/128/17721/17721779.png" height="35" alt="">
+                <li>SHIV</li>
+                <li class="red">GYM</li>
+            </ul>
+            <p>Stronger body. Stronger mind.</p>
+            <p>Stronger you.</p>
+
+    </div>
+
+    <div class="boxb">
+        <h3>QUICK LINKS</h3>
+        <div class="ul">
+            <p>Home</p>
+            <p>Membership</p>
+            <p>Trainers</p>
+            <p>Contact</p>
+        </div>
+    </div>
+
+    <div class="boxc">
+         <h3>OUR SERVICES</h3>
+        <div class="ul">
+            <p>Personal Training</p>
+            <p>Group Classes</p>
+            <p>Nutrition Plan</p>
+            <p>Body building</p>
+        </div>
+    </div>
+
+    <div class="boxd">
+         <h3>FOLLOW US</h3>
+          <div class="social">
+               <a href="https://www.facebook.com/college.hdc?mibextid=rS40aB7S9Ucbxw6v"> <img src="https://cdn-icons-png.flaticon.com/128/15047/15047435.png" height="30" alt="facebook"></a>
+                <a href="https://www.instagram.com/hdc.college?igsi=dDJtczFtNG91emhm"><img src="https://cdn-icons-png.flaticon.com/128/3955/3955024.png" height="30" alt="instagram"></a>
+                <a href=""><img src="https://cdn-icons-png.flaticon.com/128/3670/3670151.png" height="30" alt="twitter"></a>
+                <a href="http://www.youtube.com/@himalayadarshan1947"><img src="https://cdn-icons-png.flaticon.com/128/3670/3670147.png" height="30" alt="youtube"></a>
+                </div>
+
+    </div>
+</div>
+<script>
+document.querySelector(".box").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    let name = document.getElementById("fullName").value.trim();
+    let phone = document.getElementById("phone").value.trim();
+    let email = document.getElementById("email").value.trim();
+    let membership = document.getElementById("membership").value;
+    let message = document.getElementById("Message").value.trim();
+
+    // Check all required fields
+    if (name === "" || phone === "" || email === "" || membership === "" || message === "") {
+        alert("Please enter valid information in all fields.");
+        return;
+    }
+
+    // Check phone number
+    if (!/^[0-9]{10}$/.test(phone)) {
+        alert("Please enter a valid 10-digit phone number.");
+        return;
+    }
+
+    // Check email
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        alert("Please enter a valid email address.");
+        return;
+    }
+
+    // Successful submission
+    alert("Welcome to ShivGym, " + name + "!\n\nYou selected the " + membership + " membership plan.");
+
+    // Redirect to payment
+    //window.location.href = "payment.html";
+});
+    
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .boxa{
+            border: solid 2px black;
+            margin-right: 1040px;
+            padding-bottom: 10px;
+            padding-top: 10px;
+        }
+        .boxa .form{
+            margin-left: 10px;
+        }
+        .boxa .form .first{
+           padding-top: 8px;
+           padding-bottom: 8px;
+        }
+        .boxa .form .second{
+            padding-bottom: 8px;
+            padding-top: 8px;
+            padding-right:169px;
+        }
+         .boxa .form .third{
+            padding-bottom: 8px;
+            padding-top: 8px;
+            padding-right:183px;
+        }
+         .boxa .form .forth{
+            margin-left: 80px;
+            padding-right: 40px;
+            padding-left: 40px;
+            padding-bottom: 7px;
+            padding-top: 7px;
+            background-color: red;
+            color: white;
+            border-radius: 5px
+         }
+         .boxb .cnt .bx{
+            display: flex;
+            margin-top: 30px;
+         }
+          .boxb .cnt .bx .mar{
+            margin-left: 10px;
+          }
+          .boxb .cnt .bx .mar .sml{
+            font-size: small;
+          }
+         
+         
+    </style>
+</head>
+<body>
+    <div class="boxa">
+        <div class="form">
+
+          <input class="first" type="text" id="name" name="name" placeholder=" Full Name">
+         <input class="first" type="tel" id="tel" name="tel" placeholder=" Phone Number"><br><br>
+          <input class="second" type="email" id="email" name="email" placeholder=" Email Address"><br><br>
+    <select class="third">
+          <option value=""><label> Select Member Plans</label></option>
+      <option><a href="basic">Basic</a></option>
+      <option><a href="standard">Standard</a></option>
+      <option><a href="premium">Premium</a></option>
+    </select><br><br>
+    <textarea class="third" placeholder=" Your Message......."></textarea><br/><br>
+    <label>Gender:</label>
+    <input type="radio" name="gender">
+    <label>Male</label>
+    <input type="radio" name="gender">
+    <label>Female</label>
+    <input type="radio" name="gender">
+    <label>Other</label><br><br>
+    <button class="forth">Send Message</button>
+    </div>
+ </div>
+
+    <div class="boxb">
+        <div class="cnt">
+            <div class="bx">
+            <img src="https://cdn-icons-png.flaticon.com/128/5616/5616461.png" height="30" alt="">
+            <div class="mar"> ADDRESS <br>
+             <div class="sml"> Main road, Biratnagar-09, Nepal</div>
+              </div>
+              </div>
+            <div class="bx">
+              <img src="https://cdn-icons-png.flaticon.com/128/5585/5585846.png" height="30" alt="">
+               <div class="mar">
+            PHONE <br><div class="sml"> 9827018500</div>
+            </div>
+            </div>
+            <div class="bx">
+            <img src="https://cdn-icons-png.flaticon.com/128/542/542638.png" height="30" alt="">
+            <div class="mar">
+            EMAIL <br>
+            <div class="sml">shivgym002@gmail.com</div>
+            </div>
+            </div>
+             <div class="bx">
+            <img src="https://cdn-icons-png.flaticon.com/128/992/992700.png" height="30" alt="">
+            <div class="mar">
+            HOURS <br>
+            <div class="sml">5:00AM-10:00PM</div>
+            </div>
+            </div>
+        </div>
+
+        <div class="map">
+
+        </div>
+    </div>
+</body>
+</html>

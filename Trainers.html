@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .first{
+            background-color: black;
+            display: flex;
+            justify-content: space-between;
+             position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        .first .left{
+            margin-left: 100px;
+        }
+        .first .left .logo{
+            display: flex;
+            color: white;
+            list-style: none;
+            font-size: 30px;
+            font-weight: bolder;
+        }
+        .first .left .logo .red{
+            color:rgb(201, 31, 31);
+        }
+        .first .right .menu{
+            display: flex;
+            color: white;
+            list-style: none;
+            justify-content: space-between;
+            width: 550px;
+            margin-right: 20px;
+            align-items: center;
+            margin-top: 40px;
+        }
+        .first .right .menu a{
+            color: white;
+            text-decoration: none;
+
+        }
+        .first .right .menu .red{
+            background-color: rgb(142, 8, 8);
+            border-radius: 3px;
+            padding-left: 8px;
+            padding-right: 8px;
+            padding-bottom: 3px;
+            padding-top: 3px;
+        }
+       
+        .first .right .menu .btn{
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 5px;
+            padding-top: 5px;
+            background-color: rgb(154, 8, 8);
+            color: white;
+            border-radius: 5px;
+        }
+        .first .right .menu li:hover{
+             transform: translateY(-4px);
+             border: 1px solid rgb(159, 7, 7);
+             background-color: rgb(163, 9, 9);
+             border-radius: 5px;
+             padding-left: 5px;
+             padding-right: 5px;
+              padding-bottom: 5px;
+             padding-top: 5px;
+        }
+         .first .right .btn:hover{
+             background: #fff;
+             color: #000;
+        }
+        .second{
+            padding: 0px;
+            margin: 0px;
+            text-align: center;
+            background-color: rgb(19, 18, 18);
+            color: white;
+            padding-top: 1px;
+        }
+        .second .box{
+            display: flex;
+            justify-content: space-around;
+        }
+        .second .box .boxs{
+            border: solid 2px rgb(64, 63, 63);
+            border-radius: 5px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+        .second .box .boxs .red{
+            color: red;
+            font-weight: bold;
+        }
+        .second .box .boxs .social{
+            display: flex;
+            justify-content: space-evenly;
+            padding-bottom: 10px;            
+        }
+        .second .red{
+            color: red;
+        }
+        .second .third{
+            background-color:white;
+            color: black;
+            display: flex;
+            justify-content: space-evenly;
+            padding-top: 30px;
+        }
+        .second .third .dets{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div class="first">
+
+        <div class="left">
+            <ul class="logo">
+            <img src="https://cdn-icons-png.flaticon.com/128/17721/17721779.png" height="35" alt="">
+                <li>SHIV</li>
+                <li class="red">GYM</li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <ul class="menu">
+                <li><a href="Home.html">HOME</a></li>
+                <li><a href="Membership.html">MEMBERSHIP</a></li>
+                <li class="red"><a href="Trainers.html">TRAINERS</a></li>
+                <li><a href="Contact.html">CONTACT</a></li>
+            </li> <a href="Membership.html"><button class="btn">Join Now</button></a></li>
+
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="second">
+
+        <h1 class="red">OUR TRAINERS</h1>
+        <p>MEET OUR CERTIFIED TRAINERS</p>
+
+        <div class="box">
+            <div  class="boxs">
+                <img src="https://sdmntprwestus3.oaiusercontent.com/files/00000000-6518-81fd-896e-f6bbd3d063b8/raw?se=2026-09-22T13%3A00%3A13Z&sp=r&sv=2026-02-06&sr=b&scid=7943493e-83f7-4ba9-bb49-0c22499421e8&skoid=fb469448-2cc9-41bd-a5a6-6e020952b47a&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-09-22T01%3A05%3A08Z&ske=2026-09-23T01%3A05%3A08Z&sks=b&skv=2026-02-06&sig=OIICkMhS9x5dtMedKd9oiT%2B2uhQipwZ7eTMoIuzJjrw%3D" height="280" alt="">
+                <h2 class="red">MANISH JHA</h2>
+                <H4>Strength Coach</H4>
+                <p>5 Years Experience</p>
+                <div class="social">
+                <img src="https://cdn-icons-png.flaticon.com/128/15047/15047435.png" height="30" alt="">
+                <img src="https://cdn-icons-png.flaticon.com/128/3955/3955024.png" height="30" alt="">
+                <img src="https://cdn-icons-png.flaticon.com/128/3670/3670151.png" height="30" alt="">
+                <img src="https://cdn-icons-png.flaticon.com/128/3670/3670051.png" height="30" alt="">
+                </div>
+            </div>
+            <div class="boxs">
+                <img src="https://sdmntprcentralindia.oaiusercontent.com/files/00000000-8904-8208-bb7a-ea64d81ada9b/raw?se=2026-09-22T12%3A58%3A06Z&sp=r&sv=2026-02-06&sr=b&scid=2ca4ed8c-be9b-4b61-b5eb-6be06883f8d7&skoid=fb469448-2cc9-41bd-a5a6-6e020952b47a&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-09-22T05%3A15%3A23Z&ske=2026-09-23T05%3A15%3A23Z&sks=b&skv=2026-02-06&sig=8ONkGwEC789UlsM/VTAY006Z2kS75U2dkIo4lfJgy8c%3D" height="280" alt="">
+                <h2 class="red">DIPALI MEH</h2>
+                <h4>Yoga Instructor</h4>
+                <p>4 Years Experience</p>
+                <div class="social">
+                <img src="https://cdn-icons-png.flaticon.com/128/15047/15047435.png" height="30" alt="">
+                <img src="https://cdn-icons-png.flaticon.com/128/3955/3955024.png" height="30" alt="">
+                <img src="https://cdn-icons-png.flaticon.com/128/3670/3670151.png" height="30" alt="">
+                <img src="https://cdn-icons-png.flaticon.com/128/3670/3670051.png" height="30" alt="">
+                </div>
+            </div>
+            <div class="boxs">
+                <img src="https://sdmntprcentralindia.oaiusercontent.com/files/00000000-9bf4-8208-890c-209291e383eb/raw?se=2026-09-22T13%3A03%3A13Z&sp=r&sv=2026-02-06&sr=b&scid=94e05f7c-aefc-4d61-ba7f-428177b09c21&skoid=fb469448-2cc9-41bd-a5a6-6e020952b47a&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-09-22T02%3A34%3A36Z&ske=2026-09-23T02%3A34%3A36Z&sks=b&skv=2026-02-06&sig=XhV6bWEFNuSIOjdHErShPbz5nzKk6xGvAQSebgOH5z4%3D" height="280" alt="">
+                <h2 class="red">AMIT CHD</h2>
+                <h4>Cardio Specialist</h4>
+                <p>6 years Experience</p>
+                <div class="social">
+                <img src="https://cdn-icons-png.flaticon.com/128/15047/15047435.png" height="30" alt="">
+                <img src="https://cdn-icons-png.flaticon.com/128/3955/3955024.png" height="30" alt="">
+                <img src="https://cdn-icons-png.flaticon.com/128/3670/3670151.png" height="30" alt="">
+                <img src="https://cdn-icons-png.flaticon.com/128/3670/3670051.png" height="30" alt="">
+                </div>
+            </div>
+            <div class="boxs">
+                <img src="https://sdmntprindiasocentral.oaiusercontent.com/files/00000000-8ccc-8211-8bdc-cdae425d0802/raw?se=2026-09-22T12%3A59%3A09Z&sp=r&sv=2026-02-06&sr=b&scid=82e21552-1579-44c1-b182-189e91026c50&skoid=fb469448-2cc9-41bd-a5a6-6e020952b47a&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-09-22T05%3A15%3A23Z&ske=2026-09-23T05%3A15%3A23Z&sks=b&skv=2026-02-06&sig=p8CfBSdmrvtU3jE6W/vLAFRVwvkemeeO9z1ApYdA%2B30%3D" height="280" alt="">
+                <h2 class="red">JEENI ADH</h2>
+                <h4>CrossFit Trainer</h4>
+                <p>5 Years Experience</p>
+                <div class="social">
+                <img src="https://cdn-icons-png.flaticon.com/128/15047/15047435.png" height="30" alt="">
+                <img src="https://cdn-icons-png.flaticon.com/128/3955/3955024.png" height="30" alt="">
+                <img src="https://cdn-icons-png.flaticon.com/128/3670/3670151.png" height="30" alt="">
+                <img src="https://cdn-icons-png.flaticon.com/128/3670/3670051.png" height="30" alt="">
+                </div>
+            </div>
+
+        </div>
+        <div class="third">
+            <div class="dets">
+            <img src="https://png.pngtree.com/png-clipart/20250526/original/pngtree-user-flat-red-color-rounded-vector-icon-personal-photo-identity-vector-png-image_9719648.png" height="50" alt="">
+            <h1>1500+</h1>
+            <p>HAPPY MEMBER</p>
+            </div>
+            <div class="dets">
+                <img src="https://www.kindpng.com/picc/m/69-690731_transparent-expert-icon-png-icon-expert-red-png.png" height="50" alt="">
+                <h1>20+</h1>
+                <p>EXPERTS TRAINERS</p>
+            </div>
+            <div class="dets">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK2KYxaO_D-lMeBzsgU0l8YfjM7NmuQkFfub8uK1DwaQ&s=10" height="50" alt="">
+                <h1>10+</h1>
+                <p>EXPERIENCE YEARS</p>
+            </div>
+            <div class="dets">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxAAJMHttTfbh9VfMRLkWSDAgdwMnXcbKxmjHA8Oqeww&s=10" height="50" alt="">
+                <h1>50+</h1>
+                <p>FITNESS PROGRAMS</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

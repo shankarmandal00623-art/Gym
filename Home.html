@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .first{
+            background-color: black;
+            display: flex;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        .first .left{
+            margin-left: 100px;
+        }
+        .first .left .logo{
+            display: flex;
+            color: white;
+            list-style: none;
+            font-size: 30px;
+            font-weight: bolder;
+        }
+        .first .left .logo .red{
+            color:rgb(201, 31, 31);
+        }
+        .first .right .menu{
+            display: flex;
+            color: white;
+            list-style: none;
+            justify-content: space-between;
+            width: 550px;
+            margin-right: 20px;
+            align-items: center;
+            margin-top: 40px;
+        }
+        .first .right .menu a{
+            color: white;
+            text-decoration: none;
+        }
+       
+        .first .right .menu .btn{
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 5px;
+            padding-top: 5px;
+            background-color: rgb(148, 7, 7);
+            color: white;
+            border-radius: 5px;
+        }
+        .first .right .btn:hover{
+             background: #fff;
+             color: #000;
+        }
+        .first .right .menu .red{
+            background-color: rgb(158, 10, 10);
+            border-radius: 3px;
+            padding-left: 8px;
+            padding-right: 8px;
+            padding-bottom: 3px;
+            padding-top: 3px;
+        }
+         .first .right .menu li:hover{
+             transform: translateY(-4px);
+             border: 1px solid rgb(141, 9, 9);
+             background-color: rgb(163, 9, 9);
+             border-radius: 5px;
+             padding-left: 5px;
+             padding-right: 5px;
+              padding-bottom: 5px;
+             padding-top: 5px;
+
+        }
+        .second{
+            background-image: url(https://sdmntprindiasocentral.oaiusercontent.com/files/00000000-3b48-8211-8e26-7921ea6d657b/raw?se=2026-09-22T12%3A52%3A51Z&sp=r&sv=2026-02-06&sr=b&scid=b36b5a10-4261-40ed-b1c6-6cfed47b24a7&skoid=fb469448-2cc9-41bd-a5a6-6e020952b47a&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-09-22T01%3A04%3A56Z&ske=2026-09-23T01%3A04%3A56Z&sks=b&skv=2026-02-06&sig=zuWM9ZXN3dHwTF29nYtjzTpknm9cicmwdNH6SZdwnmI%3D);
+            background-size: cover;   
+            background-repeat: no-repeat; 
+            background-position: center;  
+            height: 100vh;
+            padding-top: 20px;
+        }
+        .second .left{
+            color: white;
+            margin-left: 200px;
+            margin-top: 100px;
+        }
+        .second .left .bold{
+            font-size:20px ;
+            font-weight:bolder;
+        }
+        .second .left .bold .red{
+            color:rgb(199, 30, 30);
+        }
+        .second .left .btn{
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            background-color: rgb(205, 30, 30);
+            color: white;
+            border-radius: 10px;
+        }
+        .second .left .btn:hover{
+             background: #fff;
+             color: #000;
+        }
+        .third{
+            display: flex;
+            justify-content: space-evenly;
+            background-color: rgb(249, 246, 246);
+            padding-top: 40px;
+        }
+        .forth {
+            background-color: rgb(15, 14, 14);
+            color: white;
+            padding-top: 10px;
+            padding-bottom: 30px;
+        }
+        .third .red{
+            color: rgb(205, 30, 30);
+        }
+       
+        .forth .center{
+            text-align: center;
+        }
+        .forth .center h2{
+            font-weight: bolder;
+            font-size: xx-large;
+        }
+        .forth .center .red{
+            color: rgb(200, 10, 10);
+        }
+         .forth .program{
+            display: flex;
+            justify-content: space-between;
+        }
+        .forth .program .box{
+             border: solid 2px rgb(35, 34, 34);
+            border-radius: 5px;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-left: 40px;
+            margin-right: 40px;
+            background-color: rgb(26, 25, 25);
+            margin-top: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0px 6px 4px 4px rgb(108, 6, 6);
+        }
+       .forth .program .box .red{
+        color: rgb(209, 15, 15);
+        font-weight: bold;
+        font-size: xx-large;
+       }
+       .forth .program .box h3{
+        font-size: x-large;
+        font-weight: bold;
+       }
+       .forth .program .box p{
+        color: rgb(186, 177, 177);
+       }
+       .forth .program .box a{
+        text-decoration: none;
+        color: red;
+
+       }
+       .forth .program .box:hover{
+        transform: translateY(-8px);
+        border-color: red;
+       }
+
+      
+       
+
+
+    </style>
+</head>
+<body>
+    <div class="first">
+
+        <div class="left">
+            <ul class="logo">
+            <img src="https://cdn-icons-png.flaticon.com/128/17721/17721779.png" height="35" alt="">
+                <li>SHIV</li>
+                <li class="red">GYM</li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <ul class="menu">
+                <li class="red"><a href="Home.html">HOME</a></li>
+                <li><a href="Membership.html">MEMBERSHIP</a></li>
+                <li><a href="Trainers.html">TRAINERS</a></li>
+                <li><a href="Contact.html">CONTACT</a></li>
+            </li> <a href="Membership.html"><button class="btn">Join Now</button></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="second">
+        <div class="left">
+        <p>WELCOME TO SHIVGYM</p>
+        <div class="bold">
+            <h1 class="red">STRENGTH</h1>
+            <h1 class="red">YOUR LIFE</h1>
+        </div>
+        <p>Join the best fitness center in town and</p>
+        <p>start your journey to a stronger,healthier you.</p><br>
+        <a href="Membership.html"><button class="btn">GET STERTED →</button></a>
+
+        </div>
+    </div>
+    <div class="forth">
+
+
+            <div class="center">
+                <p class="red">WHAT WE OFFER</p>
+                <h2>OUR <span class="red">PROGRAMS</span></h2>
+                <p>
+                    Everything you need to reach your next level.
+                </p>
+            </div>
+
+            <div class="program">
+
+                <div class="box">
+                    <div class="red">01</div>
+                    <h3>Strength Training</h3>
+                    <p>
+                        Build muscle, increase strength and improve
+                        overall athletic performance.
+                    </p>
+                    <a href="Membership.html">Learn More →</a>
+                </div>
+
+                <div class="box">
+                    <div class="red">02</div>
+                    <h3>Personal Training</h3>
+                    <p>
+                        One-on-one coaching and personalized workouts
+                        designed around your goals.
+                    </p>
+                    <a href="Membership.html">Learn More →</a>
+                </div>
+
+                <div class="box">
+                    <div class="red">03</div>
+                    <h3>HIIT Training</h3>
+                    <p>
+                        High-intensity workouts designed to burn calories
+                        and improve endurance.
+                    </p>
+                    <a href="Membership.html">Learn More →</a>
+                </div>
+
+                <div class="box">
+                    <div class="red">04</div>
+                    <h3>Weight Loss</h3>
+                    <p>
+                        Structured workouts and guidance to help you
+                        achieve sustainable fat loss.
+                    </p>
+                    <a href="Membership.html">Learn More →</a>
+                </div>
+
+            </div>
+
+
+    </div>
+
+
+    <div class="third">
+        <div>
+            <p>ABOUT US</p>
+            <h1>YOUR FITNESS IS</h1>
+            <h1>OUR <span class="red">MISSION</span></h1>
+        </div>
+        <div>
+            <p>At ShivGym, we believe fitness is more than </p>
+            <p>just a workout- it's a way of life. Our mission</p>
+            <p>is to help ypu become the best version of</p>
+            <p>yourself</p>
+        </div>
+        <div>
+            <img src="https://blog.nasm.org/hubfs/workouts-for-beginners.jpg" height="100" alt="">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo7BJQAhkO7eLBhksU5W22LXYnNAln7Ijif22aJxtIBg&s=10" height="100" alt="">
+        </div>
+    </div>
+</body>
+</html>
