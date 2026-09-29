@@ -272,6 +272,18 @@
 
         }
 
+         .six{
+        display:flex ;
+        background-color: black;
+        color: white;
+        justify-content: space-between;
+        padding-left: 20px;
+        padding-right: 30px;
+        padding-bottom: 15px;
+        padding-top: 15px;
+       }
+
+
 
     </style>
 </head>
@@ -281,7 +293,7 @@
         <div class="left">
             <ul class="logo">
             <img src="https://cdn-icons-png.flaticon.com/128/17721/17721779.png" height="35" alt="">
-                <li>SHIV</li>
+                <li>POWER</li>
                 <li class="red">GYM</li>
             </ul>
         </div>
@@ -322,7 +334,7 @@
             <img src="https://cdn-icons-png.flaticon.com/128/6244/6244199.png" height="50" alt="">
             <div class="mar">
             EMAIL <br>
-            <div class="sml">shivgym002@gmail.com</div>
+            <div class="sml">powergym002@gmail.com</div>
             </div>
             </div>
              <div class="bx">
@@ -391,7 +403,7 @@
     <div class="boxa">
          <ul class="logo">
             <img src="https://cdn-icons-png.flaticon.com/128/17721/17721779.png" height="35" alt="">
-                <li>SHIV</li>
+                <li>POWER</li>
                 <li class="red">GYM</li>
             </ul>
             <p>Stronger body. Stronger mind.</p>
@@ -430,6 +442,14 @@
 
     </div>
 </div>
+
+ <div class="six">
+         <div>@2026 POWERGYM Limited. All Rights Reserved.</div>
+         <div>Designed by Shivshankar Mandal</div>
+    </div>
+    
+
+
 <script>
 document.querySelector(".box").addEventListener("submit", function(event) {
     event.preventDefault();
@@ -439,6 +459,7 @@ document.querySelector(".box").addEventListener("submit", function(event) {
     let email = document.getElementById("email").value.trim();
     let membership = document.getElementById("membership").value;
     let message = document.getElementById("Message").value.trim();
+    
 
     // Check all required fields
     if (name === "" || phone === "" || email === "" || membership === "" || message === "") {
@@ -459,12 +480,15 @@ document.querySelector(".box").addEventListener("submit", function(event) {
     }
 
     // Successful submission
-    alert("Welcome to ShivGym, " + name + "!\n\nYou selected the " + membership + " membership plan.");
+    alert("Welcome to PowerGym, " + name + "!\n\nYou selected the " + membership + " membership plan.");
 
     // Redirect to payment
     //window.location.href = "payment.html";
-});
     
+});
+
+
+
 
 </script>
 
